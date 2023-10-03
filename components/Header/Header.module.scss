@@ -1,0 +1,41 @@
+.header {
+  padding: 1rem 1.8rem;
+  background: var(--header-bg);
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 55px 1fr 55px 55px auto;
+    align-items: center;
+    gap: 42px;
+  }
+  &__logo {
+    &_img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &_link {
+      display: block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+      color: var(--color-white-600);
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+      &:hover {
+        color: var(--color-white-750);
+      }
+      &.active {
+        color: var(--color-white);
+      }
+    }
+  }
+  &__intl {
+    color: var(--color-white-600);
+    &:hover {
+      color: var(--color-white-750);
+    }
+  }
+}

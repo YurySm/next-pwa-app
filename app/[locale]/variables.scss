@@ -1,0 +1,13 @@
+:root {
+  /* Your default theme */
+  --header-bg: rgb(33, 37, 41);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-750: rgba(255, 255, 255, .75);
+  --color-white-600: rgba(255, 255, 255, .6);
+  --color-black: rgba(0, 0, 0, 1);
+}
+
+
+[data-theme='dark'] {
+  --header-bg: rgb(59,59,59);
+}

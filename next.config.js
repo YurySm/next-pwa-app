@@ -14,7 +14,14 @@ const nextConfig = {
     }),
     env: {
         SERVER_URL: process.env.SERVER_URL
-    }
+    },
+    webpackDevMiddleware: config => {
+        config.watchOptions = {
+            poll: 1000,
+            aggregateTimeout: 300,
+        }
+        return config
+    },
 }
 
-module.exports =  withNextIntl(nextConfig)
+module.exports = withNextIntl(nextConfig)

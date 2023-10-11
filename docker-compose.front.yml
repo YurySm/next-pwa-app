@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./exm_folder
+    container_name: frontend
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./exm_folder:/app
+      - /app/node_modules
+      - /app/.next
+    stdin_open: true
+    tty: true

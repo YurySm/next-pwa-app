@@ -12,8 +12,8 @@
 - [redux-persist](https://www.npmjs.com/package/redux-persist) - сохрание стора в LocalStorage
 
 ## Hot reloading в Next.js приложении с использованием Docker
-нужно добавить меппинг /app/.next
-1. 
+
+1. нужно добавить меппинг /app/.next
 ```
 # docker-compose.yml
 
